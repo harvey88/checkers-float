@@ -67,57 +67,19 @@ textarea {
 	margin: 0px -20px;
 	background: #FFF;
 }
-.cell > div{
+ .row > div{
 	width: 9vmin;
 	height: 9vmin;
 	float:left;
 }
-.cell > div:nth-child(1),
-.cell > div:nth-child(3),
-.cell > div:nth-child(5),
-.cell > div:nth-child(7),
-.cell > div:nth-child(10),
-.cell > div:nth-child(12),
-.cell > div:nth-child(14),
-.cell > div:nth-child(16),
-.cell > div:nth-child(17),
-.cell > div:nth-child(19),
-.cell > div:nth-child(21),
-.cell > div:nth-child(23),
-.cell > div:nth-child(26),
-.cell > div:nth-child(28),
-.cell > div:nth-child(30),
-.cell > div:nth-child(32),
-.cell > div:nth-child(33),
-.cell > div:nth-child(35),
-.cell > div:nth-child(37),
-.cell > div:nth-child(39),
-.cell > div:nth-child(42),
-.cell > div:nth-child(44),
-.cell > div:nth-child(46),
-.cell > div:nth-child(48),
-.cell > div:nth-child(49),
-.cell > div:nth-child(51),
-.cell > div:nth-child(53),
-.cell > div:nth-child(55),
-.cell > div:nth-child(58),
-.cell > div:nth-child(60),
-.cell > div:nth-child(62),
-.cell > div:nth-child(64) {
+.cell > .unpaired_row > div:nth-child(even),
+.cell > .pair_row > div:nth-child(odd) {
 	background: #333;
 }
-.cell > div:nth-child(1)::after,
-.cell > div:nth-child(3)::after,
-.cell > div:nth-child(5)::after,
-.cell > div:nth-child(7)::after,
-.cell > div:nth-child(10)::after,
-.cell > div:nth-child(12)::after,
-.cell > div:nth-child(14)::after,
-.cell > div:nth-child(16)::after,
-.cell > div:nth-child(17)::after,
-.cell > div:nth-child(19)::after,
-.cell > div:nth-child(21)::after,
-.cell > div:nth-child(23)::after{
+
+
+ .checker_black > div:nth-child(even)::after,
+ .checker_black2 > div:nth-child(odd)::after  {
 	display: block;
 	content: '';
 	background: black;
@@ -126,18 +88,8 @@ textarea {
 	border-radius: 50%;
 	margin: 5%;
 }
-.cell > div:nth-last-child(1)::after,
-.cell > div:nth-last-child(3)::after,
-.cell > div:nth-last-child(5)::after,
-.cell > div:nth-last-child(7)::after,
-.cell > div:nth-last-child(10)::after,
-.cell > div:nth-last-child(12)::after,
-.cell > div:nth-last-child(14)::after,
-.cell > div:nth-last-child(16)::after,
-.cell > div:nth-last-child(17)::after,
-.cell > div:nth-last-child(19)::after,
-.cell > div:nth-last-child(21)::after,
-.cell > div:nth-last-child(23)::after{
+.checker_red > div:nth-child(odd)::after,
+.checker_red2 > div:nth-child(even)::after  {
 	display: block;
 	content: '';
 	background: red;
